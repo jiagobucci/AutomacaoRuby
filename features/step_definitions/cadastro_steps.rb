@@ -1,5 +1,5 @@
 Dado('que acesso o site magento') do
-    visit("https://demo-m2.bird.eu/")
+   @cadastro.acessar_aplicacao
   end
   
   Dado('desejo criar uma nova conta') do
@@ -7,17 +7,11 @@ Dado('que acesso o site magento') do
   end
   
   Quando('informar os dados pessoais') do
-    find("#firstname").set Faker::Name.name
-    find("#lastname").set "batista"
-    find("#is_subscribed").click
-    
+    @cadastro.preencher_dados_do_usuario
   end
   
   Quando('dados de acesso') do
-    numero=rand(99999)
-    find("#email_address").set Faker::Internet.email
-    find("#password").set "Teste@456"
-    find("#password-confirmation").set "Teste@456"
+    @cadastro.preencher_dados_de_acesso
     
   end
   
