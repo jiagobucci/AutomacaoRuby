@@ -1,21 +1,21 @@
 Quando('efetuo a pesquisa de um produto pelo {string}') do |sku|
     sku="MJ08"
-    find("#search").set sku
+    find(ELEMENTS["produto_campo_pesquisa"]).set sku
     click_button "Search"
 end
   
 Então('visualizo o produto pesquisado no catalogo') do
-    result=find(".product-item-link").text
+    result=find(ELEMENTS["produto_link_item_pesquisa"]).text
     expect(result).to eq "Lando Gym Jacket"
 end
   
 Quando('abro detalhe do produto') do
-    find(".product-item-link").click
+    find(ELEMENTS["produto_link_item_pesquisa"]).click
 end
   
 Quando('seleciono a cor, tamanho') do
-find("#option-label-color-93-item-50").click
-find("#option-label-size-141-item-167").click
+find(ELEMENTS["produto_select_cor"]).click
+find(ELEMENTS["produto_select_tamanho"]).click
 end
   
 Quando('preencho a quantidade {string}') do |quantidade|

@@ -1,0 +1,19 @@
+#Acesso url
+url : "https://demo-m2.bird.eu/"
+
+#Tela de cadastro
+cadastro_campo_nome : "#firstname"
+cadastro_campo_sobrenome : "#lastname"
+cadastro_checkbox_newsletter : "#is_subscribed"
+cadastro_campo_email : "#email_address"
+cadastro_campo_senha : "#password"
+cadastro_campo_senha_confirmacao : "#password-confirmation"
+
+#Tela de produto
+produto_campo_pesquisa : "#search"
+produto_link_item_pesquisa : ".product-item-link"
+produto_select_cor : "#option-label-color-93-item-50"
+produto_select_tamanho : "#option-label-size-141-item-167"
+
+
+

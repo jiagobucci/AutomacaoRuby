@@ -1,5 +1,10 @@
 Dado('que acesso o site magento') do
    @cadastro.acessar_aplicacao
+  #  page.execute_script "window.scrollBy(0,10000)"
+  #  sleep 10
+  #  page.execute_script "window.scrollTo(0,0)"
+  #   sleep 10
+
   end
   
   Dado('desejo criar uma nova conta') do

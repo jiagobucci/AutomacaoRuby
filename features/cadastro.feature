@@ -1,7 +1,7 @@
 #language: pt
 
 Funcionalidade: Cadastro de usuário
-@cad
+    @cad
     Cenário: Cadastro com sucesso
 
         Dado que acesso o site magento
