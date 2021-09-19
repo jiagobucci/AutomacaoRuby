@@ -14,15 +14,15 @@ Funcionalidade: Editando o carrinho
         Quando eu adicionar "+1" á quantidade
             E clicar no botão "Update Shopping Cart"
         Então verifico se a quantidade e o Subtotal foram atualizados
-
+@alterar
     Cenário: Editar produto do carrinho
         Dado que verifico a adiçao do produto
         Quando eu clicar no botão alterar
-            E devo escolher a cor, tamanho
+            E devo alterar escolhendo a cor, tamanho
             E quantidade
             E atualizar o carrinho
         Então verifico se foi alterado com sucesso
-
+@excluir
     Cenário: Excluir produto do carrinho
         Dado que verifico a adiçao do produto
         Quando eu clicar no botão excluir

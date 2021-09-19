@@ -11,7 +11,8 @@ Quando('abro detalhe do produto') do
 end
   
 Quando('seleciono a cor, tamanho') do
-    @produto.selecionar_cor_e_tamanho
+    @produto.selecionar_cor_e_tamanho("azul")
+
 end
   
 Quando('preencho a quantidade {string}') do |quantidade|

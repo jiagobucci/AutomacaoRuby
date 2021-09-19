@@ -17,9 +17,14 @@ class Produto
         find(ELEMENTS["produto_link_item_pesquisa"]).click
     end
     
-    def selecionar_cor_e_tamanho
-        find(ELEMENTS["produto_select_cor"]).click
-        find(ELEMENTS["produto_select_tamanho"]).click
+    def selecionar_cor_e_tamanho(nome_da_cor)
+        if nome_da_cor==="azul"
+        find(ELEMENTS["produto_select_cor_azul"]).click
+        find(ELEMENTS["produto_select_tamanho_azul"]).click
+        else 
+            find(ELEMENTS["produto_select_cor_cinza"]).click
+            find(ELEMENTS["produto_select_tamanho_cinza"]).click
+        end
     end
 
     def preencher_quantidade(quantidade)

@@ -12,8 +12,10 @@ cadastro_campo_senha_confirmacao : "#password-confirmation"
 #Tela de produto
 produto_campo_pesquisa : "#search"
 produto_link_item_pesquisa : ".product-item-link"
-produto_select_cor : "#option-label-color-93-item-50"
-produto_select_tamanho : "#option-label-size-141-item-167"
+produto_select_cor_azul : "#option-label-color-93-item-50"
+produto_select_tamanho_azul : "#option-label-size-141-item-167"
+produto_select_cor_cinza : "#option-label-color-93-item-52"
+produto_select_tamanho_cinza : "#option-label-size-141-item-168"
 
 
 
