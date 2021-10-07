@@ -16,6 +16,16 @@ produto_select_cor_azul : "#option-label-color-93-item-50"
 produto_select_tamanho_azul : "#option-label-size-141-item-167"
 produto_select_cor_cinza : "#option-label-color-93-item-52"
 produto_select_tamanho_cinza : "#option-label-size-141-item-168"
-
+checkout_campo_primeiro_nome : "input[name='firstname']"
+checkout_campo_ultimo_nome : "input[name='lastname']"
+checkout_campo_company: "input[name='company']"
+checkout_campo_endereço: "input[name='street[0]']"
+checkout_campo_pais:  "select[name='country_id'] option[value='BR']"
+checkout_campo_estado: "select[name='region_id'] option[value='485']"
+checkout_campo_cidade: "input[name='city']"
+checkout_campo_cep: "input[name='postcode']"
+checkout_campo_telefone: "input[name='telephone']" 
+checkout_campo_validar_dados_pagamento: ".step-title"
+checkout_campo_validar_compra_com_sucesso: "#page-title-wrapper"
 
 
