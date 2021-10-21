@@ -26,6 +26,6 @@ checkout_campo_cidade: "input[name='city']"
 checkout_campo_cep: "input[name='postcode']"
 checkout_campo_telefone: "input[name='telephone']" 
 checkout_campo_validar_dados_pagamento: ".step-title"
-checkout_campo_validar_compra_com_sucesso: "#page-title-wrapper"
+checkout_campo_validar_compra_com_sucesso: ".page-title"
 
 

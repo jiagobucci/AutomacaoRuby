@@ -14,7 +14,7 @@ Funcionalidade: fazendo Checkout
             E preencho os dados do Envio
             E clico no botão "Next"
             E valido os meus dados de pagamentos
-            E clico no botão "place order"
+            E clico no botão "Place Order"
         Então verifico se a compra foi efetuada com sucesso.
 
     
