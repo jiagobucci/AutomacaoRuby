@@ -1,6 +1,10 @@
 class Cadastro
     include Capybara::DSL
     
+    def initialize
+        @core = Core.new
+    end
+    
     def acessar_aplicacao
         visit(ELEMENTS["url"])
     end
@@ -8,7 +12,9 @@ class Cadastro
     def preencher_dados_do_usuario
         find(ELEMENTS["cadastro_campo_nome"]).set Faker::Name.name
         find(ELEMENTS["cadastro_campo_sobrenome"]).set "batista"
+        @core.buscar_preencher_campo("cadastro_campo_sobrenome", "Batista")
         find(ELEMENTS["cadastro_checkbox_newsletter"]).click
+        
     end
     
     def preencher_dados_de_acesso

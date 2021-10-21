@@ -4,13 +4,7 @@ Quando('clico no botão {string}') do |prosseguir_checkout|
 end
   
 Quando('preencho os dados do Envio') do
-    
-    @checkout.preencher_dados_do_Envio
-    sleep 5
-    click_button "Next"
-    @checkout.validar_dados_pagamento 
-    click_button "Place Order"
-    
+    @checkout.checkout_envio_pagamento
 end
   
 Então('verifico se a compra foi efetuada com sucesso.') do
